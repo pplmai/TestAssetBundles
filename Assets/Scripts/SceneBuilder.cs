@@ -1,26 +1,27 @@
 ﻿using UnityEngine;
+using UnityEditor;
 using System.Collections;
 
 public class SceneBuilder : MonoBehaviour
 {
-	IEnumerator Start()
+	void Start()
 	{
-		// Wait for the Caching system to be ready
-		while (!Caching.ready)
-			yield return null;
+		Caching.CleanCache();
 
-		using(WWW www = WWW.LoadFromCacheOrDownload("http://maimai.comlu.com/AssetBundles/background.hd",1))
-		{
-			yield return www;
-			if(www.error != null)
-			{
-				throw new UnityException("WWW download had an error: "+www.error);
-			}
-			AssetBundle bundle = www.assetBundle;
-			Debug.Log ("Asset Loaded");
-			Instantiate(bundle.LoadAsset("TextPrefab"));
+		StartCoroutine(LoaderQueue());
+	}
+	IEnumerator LoaderQueue()
+	{
+		yield return StartCoroutine(AssetBundlesLoader.inst().LoadAsset("http://maimai.comlu.com/AssetBundles/background",1,"background"));
+		Debug.Log ("background completed");
+		yield return StartCoroutine(AssetBundlesLoader.inst().LoadAsset("http://maimai.comlu.com/AssetBundles/prefab",1,"prefab"));
+		Debug.Log ("prefab completed");
+		yield return null;
 
-			bundle.Unload(false);
-		}
+		DoSomething();
+	}
+	void DoSomething()
+	{
+		Instantiate(AssetBundlesLoader.dict["prefab"].LoadAsset("Container"));
 	}
 }
