@@ -22,6 +22,7 @@ public class SceneBuilder : MonoBehaviour
 	}
 	void DoSomething()
 	{
-		Instantiate(AssetBundlesLoader.dict["prefab"].LoadAsset("Container"));
+		GameObject container = Instantiate(AssetBundlesLoader.dict["prefab"].LoadAsset("Container")) as GameObject;
+		container.GetComponent<SpriteRenderer>().sprite = AssetBundlesLoader.dict["background"].LoadAsset<Sprite>("bg");
 	}
 }
