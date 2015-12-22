@@ -1,0 +1,881 @@
+fileFormatVersion: 2
+guid: 0053e58cd6c924bc5946026e20d5d047
+timeCreated: 1445421979
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Animated_Objects3_0
+    21300002: Animated_Objects3_1
+    21300004: Animated_Objects3_2
+    21300006: Animated_Objects3_3
+    21300008: Animated_Objects3_4
+    21300010: Animated_Objects3_5
+    21300012: Animated_Objects3_6
+    21300014: Animated_Objects3_7
+    21300016: Animated_Objects3_8
+    21300018: Animated_Objects3_9
+    21300020: Animated_Objects3_10
+    21300022: Animated_Objects3_11
+    21300024: Animated_Objects3_12
+    21300026: Animated_Objects3_13
+    21300028: Animated_Objects3_14
+    21300030: Animated_Objects3_15
+    21300032: Animated_Objects3_16
+    21300034: Animated_Objects3_17
+    21300036: Animated_Objects3_18
+    21300038: Animated_Objects3_19
+    21300040: Animated_Objects3_20
+    21300042: Animated_Objects3_21
+    21300044: Animated_Objects3_22
+    21300046: Animated_Objects3_23
+    21300048: Animated_Objects3_24
+    21300050: Animated_Objects3_25
+    21300052: Animated_Objects3_26
+    21300054: Animated_Objects3_27
+    21300056: Animated_Objects3_28
+    21300058: Animated_Objects3_29
+    21300060: Animated_Objects3_30
+    21300062: Animated_Objects3_31
+    21300064: Animated_Objects3_32
+    21300066: Animated_Objects3_33
+    21300068: Animated_Objects3_34
+    21300070: Animated_Objects3_35
+    21300072: Animated_Objects3_36
+    21300074: Animated_Objects3_37
+    21300076: Animated_Objects3_38
+    21300078: Animated_Objects3_39
+    21300080: Animated_Objects3_40
+    21300082: Animated_Objects3_41
+    21300084: Animated_Objects3_42
+    21300086: Animated_Objects3_43
+    21300088: Animated_Objects3_44
+    21300090: Animated_Objects3_45
+    21300092: Animated_Objects3_46
+    21300094: Animated_Objects3_47
+    21300096: Animated_Objects3_48
+    21300098: Animated_Objects3_49
+    21300100: Animated_Objects3_50
+    21300102: Animated_Objects3_51
+    21300104: Animated_Objects3_52
+    21300106: Animated_Objects3_53
+    21300108: Animated_Objects3_54
+    21300110: Animated_Objects3_55
+    21300112: Animated_Objects3_56
+    21300114: Animated_Objects3_57
+    21300116: Animated_Objects3_58
+    21300118: Animated_Objects3_59
+    21300120: Animated_Objects3_60
+    21300122: Animated_Objects3_61
+    21300124: Animated_Objects3_62
+    21300126: Animated_Objects3_63
+    21300128: Animated_Objects3_64
+    21300130: Animated_Objects3_65
+    21300132: Animated_Objects3_66
+    21300134: Animated_Objects3_67
+    21300136: Animated_Objects3_68
+    21300138: Animated_Objects3_69
+    21300140: Animated_Objects3_70
+    21300142: Animated_Objects3_71
+    21300144: Animated_Objects3_72
+    21300146: Animated_Objects3_73
+    21300148: Animated_Objects3_74
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Animated_Objects3_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 440
+        width: 69
+        height: 68
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 436
+        width: 82
+        height: 73
+      alignment: 9
+      pivot: {x: .415979803, y: .0348473117}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_2
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 443
+        width: 66
+        height: 66
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_3
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 440
+        width: 68
+        height: 68
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_4
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 368
+        width: 70
+        height: 69
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_5
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 440
+        width: 72
+        height: 68
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 383
+        width: 72
+        height: 55
+      alignment: 9
+      pivot: {x: .41114527, y: .321048796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_7
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 406
+        width: 55
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_8
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 378
+        width: 59
+        height: 26
+      alignment: 9
+      pivot: {x: .464074731, y: .326088548}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_9
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 306
+        width: 58
+        height: 67
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 289
+        width: 40
+        height: 44
+      alignment: 9
+      pivot: {x: .20472908, y: .321048379}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_11
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 336
+        width: 46
+        height: 37
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_12
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 340
+        width: 32
+        height: 34
+      alignment: 9
+      pivot: {x: .3000772, y: .080253154}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_13
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 346
+        width: 21
+        height: 23
+      alignment: 9
+      pivot: {x: .328571856, y: .00869485643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_14
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 343
+        width: 24
+        height: 26
+      alignment: 9
+      pivot: {x: .241666794, y: .0807694644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_15
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 315
+        width: 23
+        height: 27
+      alignment: 9
+      pivot: {x: .621739268, y: .0296291783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_16
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 318
+        width: 24
+        height: 21
+      alignment: 9
+      pivot: {x: .350000381, y: .0857137069}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_17
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 409
+        width: 68
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_18
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 372
+        width: 72
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_19
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 420
+        width: 20
+        height: 19
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_20
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 395
+        width: 47
+        height: 42
+      alignment: 9
+      pivot: {x: .545097172, y: .77756393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_21
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 476
+        width: 69
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 394
+        width: 71
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_23
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 153
+        width: 136
+        height: 137
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_24
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 305
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_25
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 305
+        width: 94
+        height: 80
+      alignment: 9
+      pivot: {x: .508172572, y: .612034619}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_26
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 305
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_27
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 252
+        width: 81
+        height: 38
+      alignment: 9
+      pivot: {x: .989789426, y: .735747516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_28
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 153
+        width: 59
+        height: 84
+      alignment: 9
+      pivot: {x: .574437559, y: .98755157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_29
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 117
+        width: 88
+        height: 120
+      alignment: 9
+      pivot: {x: .697617769, y: .0451129265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 282
+        height: 98
+      alignment: 9
+      pivot: {x: .493147999, y: .613372505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_31
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 183
+        width: 45
+        height: 100
+      alignment: 9
+      pivot: {x: .118231878, y: .946668088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_32
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 447
+        width: 60
+        height: 65
+      alignment: 9
+      pivot: {x: .578976452, y: .354196876}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_33
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 108
+        width: 65
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_34
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 241
+        width: 77
+        height: 61
+      alignment: 9
+      pivot: {x: .754171014, y: .305550992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_35
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 318
+        width: 49
+        height: 69
+      alignment: 9
+      pivot: {x: .0944313481, y: .0708954334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_36
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 318
+        width: 42
+        height: 68
+      alignment: 9
+      pivot: {x: .120150611, y: .0817767903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_37
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 169
+        width: 43
+        height: 61
+      alignment: 9
+      pivot: {x: .580655813, y: .681938052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_38
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 116
+        width: 47
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_39
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 15
+        width: 102
+        height: 73
+      alignment: 9
+      pivot: {x: .476819813, y: .151823834}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_40
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 116
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_41
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 115
+        width: 31
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_42
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 396
+        width: 68
+        height: 97
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_43
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 108
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_45
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 358
+        width: 24
+        height: 31
+      alignment: 9
+      pivot: {x: .515993774, y: .196647391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_44
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 441
+        width: 67
+        height: 69
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_46
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 118
+        width: 23
+        height: 19
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_47
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 118
+        width: 33
+        height: 27
+      alignment: 9
+      pivot: {x: .599818349, y: .491867632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_48
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 72
+        width: 70
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_49
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 27
+        width: 65
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_50
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 64
+        width: 70
+        height: 49
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_51
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 8
+        width: 70
+        height: 50
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_52
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 308
+        width: 174
+        height: 132
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_53
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 339
+        width: 187
+        height: 173
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_54
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 156
+        width: 70
+        height: 80
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_55
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 259
+        width: 84
+        height: 49
+      alignment: 9
+      pivot: {x: .00985499751, y: .241461307}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_56
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 177
+        width: 60
+        height: 74
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_57
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 177
+        width: 51
+        height: 77
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_58
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 192
+        width: 81
+        height: 99
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_59
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 259
+        width: 78
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_60
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 5
+        width: 161
+        height: 159
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_61
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 172
+        width: 105
+        height: 161
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_62
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 767
+        width: 126
+        height: 244
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_63
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 767
+        width: 117
+        height: 240
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_64
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 527
+        width: 232
+        height: 109
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_65
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 653
+        width: 225
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_66
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 755
+        width: 176
+        height: 130
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_67
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 887
+        width: 186
+        height: 137
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_68
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 551
+        width: 128
+        height: 168
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_69
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 525
+        width: 163
+        height: 202
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_70
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 213
+        width: 125
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_71
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 278
+        width: 119
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_72
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 93
+        width: 55
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_73
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 96
+        width: 51
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animated_Objects3_74
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 102
+        width: 57
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

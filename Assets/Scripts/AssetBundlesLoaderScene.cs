@@ -1,21 +1,17 @@
-﻿using UnityEngine;
-using UnityEditor;
+using UnityEngine;
 using System.Collections;
 
 public class AssetBundlesLoaderScene : MonoBehaviour
 {
 	void Start()
 	{
-		Caching.CleanCache();
+//		Caching.CleanCache();
 		StartCoroutine(LoaderQueue());
 	}
 	IEnumerator LoaderQueue()
 	{
-		yield return StartCoroutine(AssetBundlesManager.inst().LoadAsset("http://maimai.comlu.com/AssetBundles/prefab",1,"prefab"));
-		Debug.Log ("prefab completed");
-
-		yield return StartCoroutine(AssetBundlesManager.inst().LoadAsset("http://maimai.comlu.com/AssetBundles/background.xmas",1,"background"));
-		Debug.Log ("background completed");
+		yield return StartCoroutine(AssetBundleManager.downloadAssetBundle("http://maimai.comlu.com/AssetBundles/scene",1));
+//		yield return StartCoroutine(AssetBundleManager.downloadAssetBundle("http://maimai.comlu.com/AssetBundles/map3",1));
 
 		DoSomething();
 
@@ -23,11 +19,9 @@ public class AssetBundlesLoaderScene : MonoBehaviour
 	}
 	void DoSomething()
 	{
-		AssetBundle bundle = AssetBundlesManager.dict["prefab"];
-		GameObject container = Instantiate(bundle.LoadAsset("Container")) as GameObject;
-		bundle.Unload(false);
-       	bundle = AssetBundlesManager.dict["prefab"];
-		container = Instantiate(bundle.LoadAsset("Container")) as GameObject;
-//		container.GetComponent<SpriteRenderer>().sprite = AssetBundlesManager.dict["background"].LoadAsset<Sprite>("bg");
+//		AssetBundle bundle = AssetBundleManager.getAssetBundle("prefab",1);
+//		GameObject container = Instantiate(bundle.LoadAsset("Container")) as GameObject;
+//		container = Instantiate(bundle.LoadAsset("Container")) as GameObject;
+		Application.LoadLevel("LevelSelect3");
 	}
 }
