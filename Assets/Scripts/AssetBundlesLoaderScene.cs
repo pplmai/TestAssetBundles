@@ -10,18 +10,16 @@ public class AssetBundlesLoaderScene : MonoBehaviour
 	}
 	IEnumerator LoaderQueue()
 	{
-		yield return StartCoroutine(AssetBundleManager.downloadAssetBundle("http://maimai.comlu.com/AssetBundles/scene",1));
-//		yield return StartCoroutine(AssetBundleManager.downloadAssetBundle("http://maimai.comlu.com/AssetBundles/map3",1));
+		yield return StartCoroutine(AssetBundleManager.downloadAssetBundle("http://maimai.comlu.com/AssetBundles/scene",2));
 
 		DoSomething();
 
 		yield return null;
+
+
 	}
 	void DoSomething()
 	{
-//		AssetBundle bundle = AssetBundleManager.getAssetBundle("prefab",1);
-//		GameObject container = Instantiate(bundle.LoadAsset("Container")) as GameObject;
-//		container = Instantiate(bundle.LoadAsset("Container")) as GameObject;
 		Application.LoadLevel("LevelSelect3");
 	}
 }

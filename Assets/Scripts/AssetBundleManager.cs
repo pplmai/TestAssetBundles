@@ -38,9 +38,9 @@ public class AssetBundleManager : MonoBehaviour
 		}
 	};
 	// Get an AssetBundle
-	public static AssetBundle getAssetBundle (string keyName, int version)
+	public static AssetBundle getAssetBundle (string bundleName, int version)
 	{
-		keyName = keyName + version.ToString();
+		string keyName = bundleName + version.ToString();
 		AssetBundleRef abRef;
 		if (dictAssetBundleRefs.TryGetValue(keyName, out abRef))
 			return abRef.assetBundle;
@@ -70,20 +70,21 @@ public class AssetBundleManager : MonoBehaviour
 				AssetBundleRef abRef = new AssetBundleRef (url, version);
 				abRef.assetBundle = www.assetBundle;
 				dictAssetBundleRefs.Add (keyName, abRef);
-				Debug.Log ("<color=green>AssetBundleManager: </color><color=yellow>"+bundleName+" v"+version+"</color><color=green> load completed</color>");
+				Debug.Log ("<color=#32cd32>AssetBundleManager: </color><color=yellow>"+bundleName+" v"+version+"</color><color=#32cd32> load completed</color>");
 			}
 		}
 	}
 	// Unload an AssetBundle
-	public static void Unload (string keyName, int version, bool allObjects)
+	public static void Unload (string bundleName, int version, bool allObjects = false)
 	{
-		keyName = keyName + version.ToString();
+		string keyName = bundleName + version.ToString();
 		AssetBundleRef abRef;
 		if (dictAssetBundleRefs.TryGetValue(keyName, out abRef))
 		{
 			abRef.assetBundle.Unload (allObjects);
 			abRef.assetBundle = null;
-			dictAssetBundleRefs.Remove(keyName);
+			dictAssetBundleRefs.Remove(bundleName);
+			Debug.Log ("<color=orange>AssetBundleManager: </color><color=yellow>"+bundleName+" v"+version+"</color><color=orange> unload completed</color>");
 		}
 	}
 #region Helper
