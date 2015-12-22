@@ -2,16 +2,16 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class AssetBundlesLoader : MonoBehaviour
+public class AssetBundlesManager : MonoBehaviour
 {
-	private static AssetBundlesLoader _inst = null;
+	private static AssetBundlesManager _inst = null;
 	public static Dictionary<string,AssetBundle> dict;
 	
-	public static AssetBundlesLoader inst()
+	public static AssetBundlesManager inst()
 	{
 		if(_inst == null)
 		{
-			_inst = new AssetBundlesLoader();
+			_inst = new AssetBundlesManager();
 		}
 		return _inst;
 	}
@@ -23,11 +23,6 @@ public class AssetBundlesLoader : MonoBehaviour
 	}
 
 	public IEnumerator LoadAsset(string path,int version,string key)
-	{
-		yield return StartCoroutine(LoadAssetCoroutine (path,version,key));
-	}
-
-	private IEnumerator LoadAssetCoroutine(string path,int version,string key)
 	{
 		while (!Caching.ready)
 			yield return null;
@@ -48,6 +43,8 @@ public class AssetBundlesLoader : MonoBehaviour
 				throw new UnityException("WWW download had an error: "+www.error);
 			}
 			dict.Add(key,www.assetBundle);
+
+			www.Dispose();
 		}
 		yield return null;
 	}
