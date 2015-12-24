@@ -1,0 +1,17 @@
+/Users/Mai/TestAssetBundles/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/Mai/TestAssetBundles/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/Mai/TestAssetBundles/obj/Debug/Assembly-CSharp.dll
+/Users/Mai/TestAssetBundles/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/Mai/TestAssetBundles/Temp/bin/Debug/UnityEngine.dll
+/Users/Mai/TestAssetBundles/Temp/bin/Debug/UnityEditor.dll
+/Users/Mai/TestAssetBundles/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/Mai/TestAssetBundles/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/Mai/TestAssetBundles/Temp/bin/Debug/Mono.Cecil.dll
+/Users/Mai/TestAssetBundles/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/Mai/TestAssetBundles/Temp/bin/Debug/Unity.DataContract.dll
+/Users/Mai/TestAssetBundles/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/Mai/TestAssetBundles/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/Mai/TestAssetBundles/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/Mai/TestAssetBundles/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/Mai/TestAssetBundles/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/Mai/TestAssetBundles/Temp/bin/Debug/Mono.Cecil.Mdb.dll
