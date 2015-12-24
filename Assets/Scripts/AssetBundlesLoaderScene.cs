@@ -10,7 +10,8 @@ public class AssetBundlesLoaderScene : MonoBehaviour
 	}
 	IEnumerator LoaderQueue()
 	{
-		yield return StartCoroutine(AssetBundleManager.downloadAssetBundle("http://maimai.comlu.com/AssetBundles/scene",2));
+//		yield return StartCoroutine(AssetBundleManager.downloadAssetBundle("http://maimai.comlu.com/AssetBundles/prefab",1));
+		yield return StartCoroutine(AssetBundleManager.downloadAssetBundle("http://maimai.comlu.com/AssetBundles/map3",2));
 
 		DoSomething();
 
