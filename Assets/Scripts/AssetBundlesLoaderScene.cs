@@ -11,7 +11,7 @@ public class AssetBundlesLoaderScene : MonoBehaviour
 	IEnumerator LoaderQueue()
 	{
 //		yield return StartCoroutine(AssetBundleManager.downloadAssetBundle("http://maimai.comlu.com/AssetBundles/prefab",1));
-		yield return StartCoroutine(AssetBundleManager.downloadAssetBundle("http://maimai.comlu.com/AssetBundles/map3",2));
+		yield return StartCoroutine(AssetBundleManager.downloadAssetBundle("http://maimai.comlu.com/AssetBundles/map3",1));
 
 		DoSomething();
 
@@ -21,6 +21,12 @@ public class AssetBundlesLoaderScene : MonoBehaviour
 	}
 	void DoSomething()
 	{
-		Application.LoadLevel("LevelSelect3");
 	}
+	void Update()
+	{
+		if(Input.GetKeyDown(KeyCode.Space))
+		{
+			Application.LoadLevel("LevelSelect4");
+		}
+	}	
 }
