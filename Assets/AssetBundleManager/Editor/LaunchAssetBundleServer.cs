@@ -63,6 +63,7 @@ namespace AssetBundles
 				var lastProcess = Process.GetProcessById (instance.m_ServerPID);
 				lastProcess.Kill();
 				instance.m_ServerPID = 0;
+				UnityEngine.Debug.Log("<color=red>AssetBundleServer has stopped</color>");
 			}
 			catch
 			{
@@ -92,6 +93,7 @@ namespace AssetBundles
 			else
 			{
 				//We seem to have launched, let's save the PID
+				UnityEngine.Debug.Log("<color=green>AssetBundleServer has successfully started</color>");
 				instance.m_ServerPID = launchProcess.Id;
 			}
 		}

@@ -26,5 +26,11 @@ namespace AssetBundles
 		{
 			BuildScript.BuildAssetBundles();
 		}
+
+		[MenuItem("Assets/AssetBundles/Clear Cache")]
+		public static void ClearCache ()
+		{
+			Caching.CleanCache();
+		}
 	}
 }
