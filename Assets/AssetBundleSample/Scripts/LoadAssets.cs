@@ -22,18 +22,18 @@ public class LoadAssets : MonoBehaviour
 	protected IEnumerator Initialize()
 	{
 		// Don't destroy this gameObject as we depend on it to run the loading script.
-		DontDestroyOnLoad(gameObject);
+//		DontDestroyOnLoad(gameObject);
 
 		// With this code, when in-editor or using a development builds: Always use the AssetBundle Server
 		// (This is very dependent on the production workflow of the project. 
 		// 	Another approach would be to make this configurable in the standalone player.)
-		#if DEVELOPMENT_BUILD || UNITY_EDITOR
+		#if !(DEVELOPMENT_BUILD || UNITY_EDITOR)
 		AssetBundleManager.SetDevelopmentAssetBundleServer ();
 		#else
 		// Use the following code if AssetBundles are embedded in the project for example via StreamingAssets folder etc:
-		AssetBundleManager.SetSourceAssetBundleURL(Application.dataPath + "/");
+//		AssetBundleManager.SetSourceAssetBundleURL(Application.dataPath + "/eiei/");
 		// Or customize the URL based on your deployment or configuration
-		//AssetBundleManager.SetSourceAssetBundleURL("http://www.MyWebsite/MyAssetBundles");
+		AssetBundleManager.SetSourceAssetBundleURL("http://maimai.comlu.com/AssetBundles/");
 		#endif
 
 		// Initialize AssetBundleManifest which loads the AssetBundleManifest object.
@@ -46,7 +46,6 @@ public class LoadAssets : MonoBehaviour
 	{
 		// This is simply to get the elapsed time for this phase of AssetLoading.
 		float startTime = Time.realtimeSinceStartup;
-
 		// Load asset from assetBundle.
 		AssetBundleLoadAssetOperation request = AssetBundleManager.LoadAssetAsync(assetBundleName, assetName, typeof(GameObject) );
 		if (request == null)
@@ -61,6 +60,13 @@ public class LoadAssets : MonoBehaviour
 		
 		// Calculate and display the elapsed time.
 		float elapsedTime = Time.realtimeSinceStartup - startTime;
-		Debug.Log(assetName + (prefab == null ? " was not" : " was")+ " loaded successfully in " + elapsedTime + " seconds" );
+		if(prefab == null)
+		{
+			Debug.Log("<color=red>" + assetName + " was not" + " loaded successfully in " + elapsedTime + " seconds</color>" );
+		}
+		else
+		{
+			Debug.Log("<color=green>" + assetName + " was" + " loaded successfully in " + elapsedTime + " seconds</color>" );
+		}
 	}
 }

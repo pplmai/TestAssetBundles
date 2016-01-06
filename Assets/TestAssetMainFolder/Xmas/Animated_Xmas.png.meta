@@ -1,0 +1,450 @@
+fileFormatVersion: 2
+guid: 981ba1b9c9c2a4f3791d06ff325721a3
+labels:
+- Xmas
+timeCreated: 1448250043
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Elf_bell
+    21300002: Elf_body
+    21300004: Elf_eye
+    21300006: Elf_hat
+    21300008: Reindeer_body
+    21300010: Reindeer_ear1
+    21300012: Reindeer_ear2
+    21300014: Reindeer_eye
+    21300016: Reindeer_leg
+    21300018: Reindeer_nose
+    21300020: Santa_beard
+    21300022: Santa_body
+    21300024: Santa_eye
+    21300026: Santa_hat
+    21300028: Santa_mustache
+    21300030: Snowman_body
+    21300032: Snowman_candycane
+    21300034: Snowman_eye
+    21300036: Snowman_hat
+    21300038: Snowman_nose
+    21300040: EyesClose
+    21300042: shadow
+    21300044: Eyes_happy02
+    21300046: Santa_hat_1
+    21300048: Santa_hat_2
+    21300050: gift
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Elf_bell
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 345
+        width: 25
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_body
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 427
+        width: 86
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 83}
+        - {x: -43, y: 77}
+        - {x: -43, y: 24}
+        - {x: -26, y: 0}
+        - {x: 18, y: 0}
+        - {x: 43, y: 16}
+        - {x: 43, y: 64}
+        - {x: 10, y: 83}
+    - name: Elf_eye
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 446
+        width: 12
+        height: 29
+      alignment: 9
+      pivot: {x: 0.48057175, y: 0.15433265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Elf_hat
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 247
+        width: 79
+        height: 67
+      alignment: 9
+      pivot: {x: 0.47650543, y: 0.23270245}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.6439285, y: 51.408936}
+        - {x: -37.64393, y: 15.408936}
+        - {x: -37.64393, y: -2.5910645}
+        - {x: -12.643929, y: -15.591064}
+        - {x: 16.356071, y: -15.591064}
+        - {x: 41.35607, y: -10.591064}
+        - {x: 41.35607, y: 51.408936}
+    - name: EyesClose
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 261
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Eyes_happy02
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 318
+        width: 8
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Reindeer_body
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 316
+        width: 83
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.5, y: 109}
+        - {x: -41.5, y: 13}
+        - {x: -18.5, y: 0}
+        - {x: 21.5, y: 0}
+        - {x: 41.5, y: 18}
+        - {x: 41.5, y: 76}
+        - {x: 30.5, y: 109}
+    - name: Reindeer_ear1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 402
+        width: 16
+        height: 18
+      alignment: 9
+      pivot: {x: 0.7889533, y: 0.12757196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Reindeer_ear2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 271
+        width: 20
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Reindeer_eye
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 416
+        width: 12
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5388527, y: 0.0920323}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Reindeer_leg
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 267
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.48127916, y: 0.7708992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Reindeer_nose
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 321
+        width: 23
+        height: 22
+      alignment: 9
+      pivot: {x: 0.6809099, y: 0.6365953}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Santa_beard
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 298
+        width: 42
+        height: 28
+      alignment: 9
+      pivot: {x: 0.89401066, y: 0.8426593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Santa_body
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 419
+        width: 88
+        height: 91
+      alignment: 9
+      pivot: {x: 0.5592879, y: 0.11664388}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.782665, y: 80.38541}
+        - {x: -25.217335, y: 80.38541}
+        - {x: -49.217335, y: 71.38541}
+        - {x: -49.217335, y: -6.6145935}
+        - {x: -42.217335, y: -10.6145935}
+        - {x: 12.782665, y: -10.6145935}
+        - {x: 38.782665, y: 11.3854065}
+        - {x: 38.782665, y: 67.38541}
+        - {x: 37.782665, y: 72.38541}
+    - name: Santa_eye
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 386
+        width: 12
+        height: 28
+      alignment: 9
+      pivot: {x: 0.49999937, y: 0.122191295}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Santa_hat_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 267
+        width: 82
+        height: 65
+      alignment: 9
+      pivot: {x: 0.49633715, y: 0.13494246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.699646, y: 56.22873}
+        - {x: -36.699646, y: 50.22873}
+        - {x: -40.699646, y: 39.22873}
+        - {x: -40.699646, y: 7.2287292}
+        - {x: -37.699646, y: 1.2287292}
+        - {x: -26.699646, y: -8.771271}
+        - {x: 22.300354, y: -8.771271}
+        - {x: 41.300354, y: 1.2287292}
+        - {x: 41.300354, y: 41.22873}
+        - {x: 26.300354, y: 56.22873}
+    - name: Santa_hat_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 383
+        width: 45
+        height: 37
+      alignment: 9
+      pivot: {x: 0.1494222, y: 0.042362936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.276001, y: 35.432556}
+        - {x: 7.276001, y: 27.432556}
+        - {x: -6.723999, y: 11.432556}
+        - {x: -6.723999, y: -1.5674438}
+        - {x: 38.276, y: -1.5674438}
+        - {x: 38.276, y: 32.432556}
+        - {x: 35.276, y: 35.432556}
+    - name: Santa_mustache
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 302
+        width: 23
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Snowman_body
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 334
+        width: 83
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.5, y: 83}
+        - {x: -14.5, y: 83}
+        - {x: -41.5, y: 66}
+        - {x: -41.5, y: 12}
+        - {x: -26.5, y: 0}
+        - {x: 28.5, y: 0}
+        - {x: 41.5, y: 18}
+        - {x: 41.5, y: 71}
+        - {x: 39.5, y: 73}
+    - name: Snowman_candycane
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 252
+        width: 38
+        height: 44
+      alignment: 9
+      pivot: {x: 0.23624162, y: 0.035980918}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.977188, y: 42.41684}
+        - {x: -8.977188, y: 37.41684}
+        - {x: -8.977188, y: -1.5831604}
+        - {x: 10.022812, y: -1.5831604}
+        - {x: 11.022812, y: -0.5831604}
+        - {x: 29.022812, y: 14.41684}
+        - {x: 29.022812, y: 38.41684}
+        - {x: 27.022812, y: 42.41684}
+    - name: Snowman_eye
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 372
+        width: 12
+        height: 28
+      alignment: 9
+      pivot: {x: 0.48684248, y: 0.11655208}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Snowman_hat
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 422
+        width: 60
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5061869, y: 0.17080861}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.371216, y: 1.9471436}
+        - {x: -12.371216, y: -9.052856}
+        - {x: 8.628784, y: -9.052856}
+        - {x: 29.628784, y: -2.0528564}
+        - {x: 29.628784, y: 24.947144}
+        - {x: 27.628784, y: 34.947144}
+        - {x: 14.628784, y: 43.947144}
+        - {x: -11.371216, y: 43.947144}
+        - {x: -30.371216, y: 36.947144}
+    - name: Snowman_nose
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 286
+        width: 20
+        height: 14
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: gift
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 328
+        width: 42
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 53}
+        - {x: -21, y: 2}
+        - {x: -17, y: 0}
+        - {x: 18, y: 0}
+        - {x: 21, y: 11}
+        - {x: 21, y: 47}
+        - {x: 16, y: 53}
+    - name: shadow
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 477
+        width: 70
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 16.5}
+        - {x: -35, y: 7.5}
+        - {x: -35, y: -5.5}
+        - {x: -22, y: -16.5}
+        - {x: 13, y: -16.5}
+        - {x: 35, y: -9.5}
+        - {x: 35, y: 7.5}
+        - {x: 34, y: 8.5}
+        - {x: 12, y: 16.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
