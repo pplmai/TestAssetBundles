@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 namespace AssetBundles
@@ -86,9 +87,9 @@ namespace AssetBundles
 			if (bundle != null)
 			{
 				if (m_IsAdditive)
-					m_Request = Application.LoadLevelAdditiveAsync (m_LevelName);
+					SceneManager.LoadSceneAsync(m_LevelName,LoadSceneMode.Additive);
 				else
-					m_Request = Application.LoadLevelAsync (m_LevelName);
+					SceneManager.LoadSceneAsync(m_LevelName);
 				return false;
 			}
 			else
