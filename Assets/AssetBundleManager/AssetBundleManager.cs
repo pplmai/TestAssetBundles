@@ -51,6 +51,7 @@ namespace AssetBundles
 	
 		static Dictionary<string, LoadedAssetBundle> m_LoadedAssetBundles = new Dictionary<string, LoadedAssetBundle> ();
 		static Dictionary<string, WWW> m_DownloadingWWWs = new Dictionary<string, WWW> ();
+		static Dictionary<string, LoaderBar> m_DownloadingBar = new Dictionary<string, LoaderBar> ();
 		static Dictionary<string, string> m_DownloadingErrors = new Dictionary<string, string> ();
 		static List<AssetBundleLoadOperation> m_InProgressOperations = new List<AssetBundleLoadOperation> ();
 		static Dictionary<string, string[]> m_Dependencies = new Dictionary<string, string[]> ();
@@ -315,8 +316,10 @@ namespace AssetBundles
 				download = new WWW(url);
 			else
 				download = WWW.LoadFromCacheOrDownload(url, m_AssetBundleManifest.GetAssetBundleHash(assetBundleName), 0); 
-	
 			m_DownloadingWWWs.Add(assetBundleName, download);
+
+			LoaderBar loader = CreateLoaderBar(assetBundleName);
+			m_DownloadingBar.Add(assetBundleName,loader);
 	
 			return false;
 		}
@@ -407,7 +410,14 @@ namespace AssetBundles
 					keysToRemove.Add(keyValue.Key);
 					continue;
 				}
-	
+
+				//If downloading in progress
+				if (!download.isDone)
+				{
+					m_DownloadingBar[keyValue.Key].progress = download.progress;
+					continue;
+				}
+
 				// If downloading succeeds.
 				if(download.isDone)
 				{
@@ -430,6 +440,8 @@ namespace AssetBundles
 			{
 				WWW download = m_DownloadingWWWs[key];
 				m_DownloadingWWWs.Remove(key);
+				Destroy(m_DownloadingBar[key].gameObject);
+				m_DownloadingBar.Remove(key);
 				download.Dispose();
 			}
 	
@@ -442,6 +454,20 @@ namespace AssetBundles
 				}
 				else
 					i++;
+			}
+			foreach(var key in m_LoadedAssetBundles)
+			{
+				Debug.Log(key.Key);
+			}
+			Debug.Log("=================");
+			if(Input.GetKeyDown(KeyCode.Space))
+			{
+				AssetBundle bundle = m_LoadedAssetBundles["cm"].m_AssetBundle;
+				Instantiate(bundle.LoadAsset("Level4Prefab"));
+			}
+			if(Input.GetKeyDown(KeyCode.D))
+			{
+				UnloadAssetBundle("cm");
 			}
 		}
 	
@@ -500,6 +526,14 @@ namespace AssetBundles
 			}
 	
 			return operation;
+		}
+
+		private static LoaderBar CreateLoaderBar(string key)
+		{
+			GameObject bar = Instantiate(Resources.Load("AssetBundlesLoader/LoaderBar",typeof(GameObject))) as GameObject;
+			LoaderBar loader = bar.GetComponent<LoaderBar>();
+			loader.key = key; 
+			return loader;
 		}
 	} // End of AssetBundleManager.
 }

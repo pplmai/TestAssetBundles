@@ -18,7 +18,22 @@ public class LoaderBar : MonoBehaviour
 	}
 	private float _progress;
 
+	[HideInInspector] public string key
+	{
+		get
+		{
+			return _key;
+		}
+		set
+		{
+			_key = value;
+			text.text = _key;
+		}
+	}
+	private string _key;
+
 	[SerializeField] SpriteRenderer bar;
+	[SerializeField] TextMesh text;
 
 	public void UpdateProgressBar ()
 	{
