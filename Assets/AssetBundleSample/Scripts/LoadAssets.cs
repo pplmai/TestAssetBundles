@@ -27,11 +27,11 @@ public class LoadAssets : MonoBehaviour
 		// With this code, when in-editor or using a development builds: Always use the AssetBundle Server
 		// (This is very dependent on the production workflow of the project. 
 		// 	Another approach would be to make this configurable in the standalone player.)
-		#if !(DEVELOPMENT_BUILD || UNITY_EDITOR)
+		#if (DEVELOPMENT_BUILD || UNITY_EDITOR)
 		AssetBundleManager.SetDevelopmentAssetBundleServer ();
 		#else
 		// Use the following code if AssetBundles are embedded in the project for example via StreamingAssets folder etc:
-//		AssetBundleManager.SetSourceAssetBundleURL(Application.dataPath + "/eiei/");
+//		AssetBundleManager.SetSourceAssetBundleDirectory("/Assets/StreamingAssets/Android/");
 		// Or customize the URL based on your deployment or configuration
 		AssetBundleManager.SetSourceAssetBundleURL("http://maimai.comlu.com/AssetBundles/");
 		#endif
@@ -56,8 +56,11 @@ public class LoadAssets : MonoBehaviour
 		GameObject prefab = request.GetAsset<GameObject> ();
 
 		if (prefab != null)
-			GameObject.Instantiate(prefab);
-		
+		{
+			GameObject clone = GameObject.Instantiate(prefab);
+			clone.transform.SetParent(this.transform,false);
+		}
+
 		// Calculate and display the elapsed time.
 		float elapsedTime = Time.realtimeSinceStartup - startTime;
 		if(prefab == null)

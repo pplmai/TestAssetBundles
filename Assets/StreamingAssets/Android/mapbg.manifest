@@ -1,0 +1,90 @@
+ManifestFileVersion: 0
+CRC: 3125778910
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4fffbb37d06812ace511d66c37d57c51
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6ca2d3a4b04ea5a7c14e1ec44a0b8145
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: bdaa46008c937444c9ddecdcd8ab368e, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/[AssetBundles]/mapbg/Map1_Piece7.png
+- Assets/[AssetBundles]/mapbg/Map1_Piece9.png
+- Assets/[AssetBundles]/mapbg/Map2_piece1.png
+- Assets/[AssetBundles]/mapbg/Map2_piece12.png
+- Assets/[AssetBundles]/mapbg/Map4_piece11.png
+- Assets/[AssetBundles]/mapbg/Map2_piece9.png
+- Assets/[AssetBundles]/mapbg/Map2_piece5.png
+- Assets/[AssetBundles]/mapbg/Map3_piece9.png
+- Assets/[AssetBundles]/mapbg/Map2_piece7.png
+- Assets/[AssetBundles]/mapbg/Map4_piece5.png
+- Assets/[AssetBundles]/mapbg/Map1_Piece3.png
+- Assets/[AssetBundles]/mapbg/Map3_piece8.png
+- Assets/[AssetBundles]/mapbg/Map2_piece11.png
+- Assets/[AssetBundles]/mapbg/Map2_piece6.png
+- Assets/[AssetBundles]/mapbg/Map4_piece1.png
+- Assets/[AssetBundles]/mapbg/Map2_piece2.png
+- Assets/[AssetBundles]/mapbg/Map1_Piece12.png
+- Assets/[AssetBundles]/mapbg/Map1_Piece8.png
+- Assets/[AssetBundles]/mapbg/Map3_piece4.png
+- Assets/[AssetBundles]/mapbg/Map2_piece8.png
+- Assets/[AssetBundles]/mapbg/Map1_Piece5.png
+- Assets/[AssetBundles]/mapbg/Map3_piece5.png
+- Assets/[AssetBundles]/mapbg/BG_Map3.prefab
+- Assets/[AssetBundles]/mapbg/Map4_piece2.png
+- Assets/[AssetBundles]/mapbg/Map4_piece6.png
+- Assets/[AssetBundles]/mapbg/Map1_Piece1.png
+- Assets/[AssetBundles]/mapbg/Map4_piece3.png
+- Assets/[AssetBundles]/mapbg/Map3_piece10.png
+- Assets/[AssetBundles]/mapbg/BG_Map2.prefab
+- Assets/[AssetBundles]/mapbg/Map1_Piece6.png
+- Assets/[AssetBundles]/mapbg/Map2_piece4.png
+- Assets/[AssetBundles]/mapbg/Map1_Piece10.png
+- Assets/[AssetBundles]/mapbg/Map4_piece4.png
+- Assets/[AssetBundles]/mapbg/Map3_piece7.png
+- Assets/[AssetBundles]/mapbg/Map1_Piece2.png
+- Assets/[AssetBundles]/mapbg/Map3_piece2.png
+- Assets/[AssetBundles]/mapbg/Map4_piece8.png
+- Assets/[AssetBundles]/mapbg/BG_Map1.prefab
+- Assets/[AssetBundles]/mapbg/Map1_Piece11.png
+- Assets/[AssetBundles]/mapbg/Map3_piece11.png
+- Assets/[AssetBundles]/mapbg/Map1_piece13.png
+- Assets/[AssetBundles]/mapbg/Map3_piece1.png
+- Assets/[AssetBundles]/mapbg/Map3_piece6.png
+- Assets/[AssetBundles]/mapbg/BG_Map4.prefab
+- Assets/[AssetBundles]/mapbg/Map4_piece7.png
+- Assets/[AssetBundles]/mapbg/Map2_piece3.png
+- Assets/[AssetBundles]/mapbg/Map2_piece10.png
+- Assets/[AssetBundles]/mapbg/Map4_piece9.png
+- Assets/[AssetBundles]/mapbg/Map3_piece3.png
+- Assets/[AssetBundles]/mapbg/RiverFlow.mat
+- Assets/[AssetBundles]/mapbg/Map1_Piece4.png
+- Assets/[AssetBundles]/mapbg/Map3_piece12.png
+- Assets/[AssetBundles]/mapbg/Map4_piece10.png
+Dependencies: []

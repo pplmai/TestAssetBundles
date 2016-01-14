@@ -37,6 +37,8 @@ namespace AssetBundles
 	// Class takes care of loading assetBundle and its dependencies automatically, loading variants automatically.
 	public class AssetBundleManager : MonoBehaviour
 	{
+		static GameObject go;
+
 		public enum LogMode { All, JustErrors };
 		public enum LogType { Info, Warning, Error };
 	
@@ -79,6 +81,7 @@ namespace AssetBundles
 		// AssetBundleManifest object which can be used to load the dependecies and check suitable assetBundle variants.
 		public static AssetBundleManifest AssetBundleManifestObject
 		{
+			get {return m_AssetBundleManifest; }
 			set {m_AssetBundleManifest = value; }
 		}
 	
@@ -202,9 +205,13 @@ namespace AssetBundles
 	#if UNITY_EDITOR
 			Log (LogType.Info, "Simulation Mode: " + (SimulateAssetBundleInEditor ? "Enabled" : "Disabled"));
 	#endif
-	
-			var go = new GameObject("AssetBundleManager", typeof(AssetBundleManager));
-			DontDestroyOnLoad(go);
+
+			if(go == null)
+			{
+				go = new GameObject("AssetBundleManager", typeof(AssetBundleManager));
+				DontDestroyOnLoad(go);
+			}
+
 		
 	#if UNITY_EDITOR	
 			// If we're in Editor simulation mode, we don't need the manifest assetBundle.
@@ -315,11 +322,17 @@ namespace AssetBundles
 			if (isLoadingAssetBundleManifest)
 				download = new WWW(url);
 			else
-				download = WWW.LoadFromCacheOrDownload(url, m_AssetBundleManifest.GetAssetBundleHash(assetBundleName), 0); 
+			{
+				download = WWW.LoadFromCacheOrDownload(url, m_AssetBundleManifest.GetAssetBundleHash(assetBundleName), 0);
+				Debug.Log("BundleName : "+assetBundleName + " Hash : "+m_AssetBundleManifest.GetAssetBundleHash(assetBundleName));
+			}
 			m_DownloadingWWWs.Add(assetBundleName, download);
 
-			LoaderBar loader = CreateLoaderBar(assetBundleName);
-			m_DownloadingBar.Add(assetBundleName,loader);
+			if(!isLoadingAssetBundleManifest)
+			{
+				LoaderBar loader = CreateLoaderBar(assetBundleName);
+				m_DownloadingBar.Add(assetBundleName,loader);
+			}
 	
 			return false;
 		}
@@ -412,7 +425,7 @@ namespace AssetBundles
 				}
 
 				//If downloading in progress
-				if (!download.isDone)
+				if (!download.isDone && m_DownloadingBar.ContainsKey(keyValue.Key))
 				{
 					m_DownloadingBar[keyValue.Key].progress = download.progress;
 					continue;
@@ -440,8 +453,11 @@ namespace AssetBundles
 			{
 				WWW download = m_DownloadingWWWs[key];
 				m_DownloadingWWWs.Remove(key);
-				Destroy(m_DownloadingBar[key].gameObject);
-				m_DownloadingBar.Remove(key);
+				if(m_DownloadingBar.ContainsKey(key))
+				{
+					Destroy(m_DownloadingBar[key].gameObject);
+					m_DownloadingBar.Remove(key);
+				}
 				download.Dispose();
 			}
 	
@@ -454,20 +470,6 @@ namespace AssetBundles
 				}
 				else
 					i++;
-			}
-			foreach(var key in m_LoadedAssetBundles)
-			{
-				Debug.Log(key.Key);
-			}
-			Debug.Log("=================");
-			if(Input.GetKeyDown(KeyCode.Space))
-			{
-				AssetBundle bundle = m_LoadedAssetBundles["cm"].m_AssetBundle;
-				Instantiate(bundle.LoadAsset("Level4Prefab"));
-			}
-			if(Input.GetKeyDown(KeyCode.D))
-			{
-				UnloadAssetBundle("cm");
 			}
 		}
 	
