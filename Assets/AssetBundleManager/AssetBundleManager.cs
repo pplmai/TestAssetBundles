@@ -468,7 +468,6 @@ namespace AssetBundles
 						foreach(string name in names)
 						{
 							canvas.AddSlot(name,m_AssetBundleManifest.GetAssetBundleHash(name).ToString());
-							Debug.Log(m_AssetBundleManifest.GetAssetBundleHash(name).ToString());
 						}
 					}
 					m_InProgressOperations.RemoveAt(i);

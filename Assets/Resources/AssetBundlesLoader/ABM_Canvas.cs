@@ -11,11 +11,6 @@ public class ABM_Canvas : MonoBehaviour
 
 	Dictionary<string,BundleSlot> slots;
 
-	void Start ()
-	{
-		slots = new Dictionary<string,BundleSlot>();
-	}
-
 	public void SetTitle(string title)
 	{
 		titleText.text = title;
@@ -23,6 +18,7 @@ public class ABM_Canvas : MonoBehaviour
 
 	public void AddSlot(string name,string hash)
 	{
+		if(slots == null) slots = new Dictionary<string,BundleSlot>();
 		BundleSlot slot = CreateBundleSlot(name,hash);
 		slot.SetProgress(0);
 		slot.transform.localPosition = new Vector3(0,-30*body.childCount,0);
@@ -32,12 +28,14 @@ public class ABM_Canvas : MonoBehaviour
 
 	public void SetProgress(string name,float progress)
 	{
+		if(slots == null) slots = new Dictionary<string,BundleSlot>();
 		if(slots.ContainsKey(name))
 			slots[name].SetProgress(progress);
 	}
 
 	public void SetColorTheme(string name,bool isLoad)
 	{
+		if(slots == null) slots = new Dictionary<string,BundleSlot>();
 		if(slots.ContainsKey(name))
 			slots[name].SetColor(isLoad?loadColor:unloadColor);
 	}

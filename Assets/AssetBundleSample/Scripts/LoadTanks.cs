@@ -103,12 +103,12 @@ public class LoadTanks : MonoBehaviour
 		// Show the two ActiveVariants in the console.
 		Debug.Log (AssetBundleManager.ActiveVariants [0]);
 		Debug.Log (AssetBundleManager.ActiveVariants [1]);
-		
-		// Load variant level which depends on variants.
-		yield return StartCoroutine(InitializeLevelAsync (sceneName, true) );
 
 		// Load additonal assets, in this case a language specific banner
 		yield return StartCoroutine(InstantiateGameObjectAsync (textAssetBundle, textAssetName) );
+
+		// Load variant level which depends on variants.
+		yield return StartCoroutine(InitializeLevelAsync (sceneName, true) );
 	}
 
 	// Initialize the downloading url and AssetBundleManifest object.

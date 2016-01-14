@@ -9,7 +9,7 @@ public class BundleSlot : MonoBehaviour
 
 	public void SetTitle(string name,string hash)
 	{
-		titleText.text = name;// + " : " + hash;
+		titleText.text = name + " : " + hash;
 	}
 
 	public void SetColor(Color color)
