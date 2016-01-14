@@ -38,6 +38,7 @@ namespace AssetBundles
 	public class AssetBundleManager : MonoBehaviour
 	{
 		static GameObject go;
+		static ABM_Canvas canvas;
 
 		public enum LogMode { All, JustErrors };
 		public enum LogType { Info, Warning, Error };
@@ -53,7 +54,6 @@ namespace AssetBundles
 	
 		static Dictionary<string, LoadedAssetBundle> m_LoadedAssetBundles = new Dictionary<string, LoadedAssetBundle> ();
 		static Dictionary<string, WWW> m_DownloadingWWWs = new Dictionary<string, WWW> ();
-		static Dictionary<string, LoaderBar> m_DownloadingBar = new Dictionary<string, LoaderBar> ();
 		static Dictionary<string, string> m_DownloadingErrors = new Dictionary<string, string> ();
 		static List<AssetBundleLoadOperation> m_InProgressOperations = new List<AssetBundleLoadOperation> ();
 		static Dictionary<string, string[]> m_Dependencies = new Dictionary<string, string[]> ();
@@ -226,7 +226,7 @@ namespace AssetBundles
 		}
 		
 		// Load AssetBundle and its dependencies.
-		static protected void LoadAssetBundle(string assetBundleName, bool isLoadingAssetBundleManifest = false)
+		static public void LoadAssetBundle(string assetBundleName, bool isLoadingAssetBundleManifest = false)
 		{
 			Log(LogType.Info, "Loading Asset Bundle " + (isLoadingAssetBundleManifest ? "Manifest: " : ": ") + assetBundleName);
 	
@@ -324,14 +324,12 @@ namespace AssetBundles
 			else
 			{
 				download = WWW.LoadFromCacheOrDownload(url, m_AssetBundleManifest.GetAssetBundleHash(assetBundleName), 0);
-				Debug.Log("BundleName : "+assetBundleName + " Hash : "+m_AssetBundleManifest.GetAssetBundleHash(assetBundleName));
 			}
 			m_DownloadingWWWs.Add(assetBundleName, download);
 
-			if(!isLoadingAssetBundleManifest)
+			if(isLoadingAssetBundleManifest)
 			{
-				LoaderBar loader = CreateLoaderBar(assetBundleName);
-				m_DownloadingBar.Add(assetBundleName,loader);
+				canvas = LoadDebugCanvas(assetBundleName);
 			}
 	
 			return false;
@@ -403,6 +401,7 @@ namespace AssetBundles
 			{
 				bundle.m_AssetBundle.Unload(false);
 				m_LoadedAssetBundles.Remove(assetBundleName);
+				canvas.SetColorTheme(assetBundleName,false);
 	
 				Log(LogType.Info, assetBundleName + " has been unloaded successfully");
 			}
@@ -425,9 +424,9 @@ namespace AssetBundles
 				}
 
 				//If downloading in progress
-				if (!download.isDone && m_DownloadingBar.ContainsKey(keyValue.Key))
+				if (!download.isDone)
 				{
-					m_DownloadingBar[keyValue.Key].progress = download.progress;
+					canvas.SetProgress(keyValue.Key,download.progress);
 					continue;
 				}
 
@@ -443,6 +442,8 @@ namespace AssetBundles
 					}
 				
 					//Debug.Log("Downloading " + keyValue.Key + " is done at frame " + Time.frameCount);
+					canvas.SetProgress(keyValue.Key,1);
+					canvas.SetColorTheme(keyValue.Key,true);
 					m_LoadedAssetBundles.Add(keyValue.Key, new LoadedAssetBundle(download.assetBundle) );
 					keysToRemove.Add(keyValue.Key);
 				}
@@ -453,11 +454,6 @@ namespace AssetBundles
 			{
 				WWW download = m_DownloadingWWWs[key];
 				m_DownloadingWWWs.Remove(key);
-				if(m_DownloadingBar.ContainsKey(key))
-				{
-					Destroy(m_DownloadingBar[key].gameObject);
-					m_DownloadingBar.Remove(key);
-				}
 				download.Dispose();
 			}
 	
@@ -466,6 +462,15 @@ namespace AssetBundles
 			{
 				if (!m_InProgressOperations[i].Update())
 				{
+					if(m_InProgressOperations[i] is AssetBundleLoadManifestOperation)
+					{
+						string[] names = m_AssetBundleManifest.GetAllAssetBundles();
+						foreach(string name in names)
+						{
+							canvas.AddSlot(name,m_AssetBundleManifest.GetAssetBundleHash(name).ToString());
+							Debug.Log(m_AssetBundleManifest.GetAssetBundleHash(name).ToString());
+						}
+					}
 					m_InProgressOperations.RemoveAt(i);
 				}
 				else
@@ -479,6 +484,7 @@ namespace AssetBundles
 			Log(LogType.Info, "Loading " + assetName + " from " + assetBundleName + " bundle");
 	
 			AssetBundleLoadAssetOperation operation = null;
+
 	#if UNITY_EDITOR
 			if (SimulateAssetBundleInEditor)
 			{
@@ -529,13 +535,13 @@ namespace AssetBundles
 	
 			return operation;
 		}
-
-		private static LoaderBar CreateLoaderBar(string key)
+			
+		private static ABM_Canvas LoadDebugCanvas(string title)
 		{
-			GameObject bar = Instantiate(Resources.Load("AssetBundlesLoader/LoaderBar",typeof(GameObject))) as GameObject;
-			LoaderBar loader = bar.GetComponent<LoaderBar>();
-			loader.key = key; 
-			return loader;
+			GameObject obj = Instantiate(Resources.Load("AssetBundlesLoader/ABM_Canvas",typeof(GameObject))) as GameObject;
+			ABM_Canvas cv = obj.GetComponent<ABM_Canvas>();
+			cv.SetTitle(title);
+			return cv;
 		}
 	} // End of AssetBundleManager.
 }

@@ -21,7 +21,7 @@ namespace AssetBundles
 		public void Reset()
 		{
 		}
-		
+			
 		abstract public bool Update ();
 		
 		abstract public bool IsDone ();

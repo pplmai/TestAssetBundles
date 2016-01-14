@@ -72,4 +72,15 @@ public class LoadAssets : MonoBehaviour
 			Debug.Log("<color=green>" + assetName + " was" + " loaded successfully in " + elapsedTime + " seconds</color>" );
 		}
 	}
+	void Update()
+	{
+		if(Input.GetKeyDown(KeyCode.A))
+		{
+			AssetBundleManager.UnloadAssetBundle("cube-bundle");
+		}
+		if(Input.GetKeyDown(KeyCode.D))
+		{
+			AssetBundleManager.LoadAssetBundle("cube-bundle");
+		}
+	}
 }
